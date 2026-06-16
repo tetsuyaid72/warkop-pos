@@ -1,26 +1,278 @@
 @import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: oklch(0.985 0.008 75);
+  --foreground: oklch(0.18 0.015 50);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.18 0.015 50);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.18 0.015 50);
+  --primary: oklch(0.35 0.06 50);
+  --primary-foreground: oklch(0.99 0.005 75);
+  --secondary: oklch(0.94 0.02 75);
+  --secondary-foreground: oklch(0.28 0.04 50);
+  --muted: oklch(0.96 0.012 75);
+  --muted-foreground: oklch(0.5 0.02 60);
+  --accent: oklch(0.7 0.12 65);
+  --accent-foreground: oklch(0.2 0.04 50);
+  --destructive: oklch(0.6 0.18 25);
+  --destructive-foreground: oklch(0.99 0.005 75);
+  --success: oklch(0.65 0.12 150);
+  --success-foreground: oklch(0.99 0.005 75);
+  --warning: oklch(0.78 0.14 75);
+  --warning-foreground: oklch(0.2 0.04 50);
+  --border: oklch(0.9 0.015 70);
+  --input: oklch(0.9 0.015 70);
+  --ring: oklch(0.7 0.12 65);
+  --radius: 0.75rem;
+}
+
+.dark {
+  --background: oklch(0.16 0.012 50);
+  --foreground: oklch(0.95 0.01 75);
+  --card: oklch(0.21 0.014 50);
+  --card-foreground: oklch(0.95 0.01 75);
+  --popover: oklch(0.21 0.014 50);
+  --popover-foreground: oklch(0.95 0.01 75);
+  --primary: oklch(0.78 0.08 65);
+  --primary-foreground: oklch(0.18 0.015 50);
+  --secondary: oklch(0.28 0.02 50);
+  --secondary-foreground: oklch(0.95 0.01 75);
+  --muted: oklch(0.26 0.014 50);
+  --muted-foreground: oklch(0.7 0.015 70);
+  --accent: oklch(0.7 0.12 65);
+  --accent-foreground: oklch(0.18 0.015 50);
+  --destructive: oklch(0.55 0.2 25);
+  --destructive-foreground: oklch(0.95 0.01 75);
+  --success: oklch(0.65 0.15 150);
+  --success-foreground: oklch(0.16 0.012 50);
+  --warning: oklch(0.78 0.14 75);
+  --warning-foreground: oklch(0.18 0.015 50);
+  --border: oklch(0.3 0.015 50);
+  --input: oklch(0.3 0.015 50);
+  --ring: oklch(0.7 0.12 65);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-success: var(--success);
+  --color-success-foreground: var(--success-foreground);
+  --color-warning: var(--warning);
+  --color-warning-foreground: var(--warning-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --font-sans: var(--font-sans), ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-display: var(--font-display), ui-serif, Georgia, "Times New Roman", serif;
+  --font-mono: var(--font-mono), ui-monospace, "JetBrains Mono", monospace;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-feature-settings: "rlig" 1, "calt" 1, "ss01" 1;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  ::selection {
+    background-color: oklch(0.7 0.12 65 / 0.35);
+    color: var(--foreground);
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@layer utilities {
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  .text-balance {
+    text-wrap: balance;
+  }
+  .text-pretty {
+    text-wrap: pretty;
+  }
+
+  /* Display heading utility — Fraunces with optical sizing tuned for the size */
+  .font-display {
+    font-family: var(--font-display);
+    font-feature-settings: "ss01" 1, "ss02" 1, "ss03" 1, "liga" 1;
+    font-variation-settings:
+      "opsz" 144,
+      "SOFT" 30;
+    letter-spacing: -0.02em;
+  }
+
+  .font-display-italic {
+    font-family: var(--font-display);
+    font-style: italic;
+    font-variation-settings:
+      "opsz" 144,
+      "SOFT" 50;
+    letter-spacing: -0.01em;
+  }
+
+  .font-mono {
+    font-family: var(--font-mono);
+  }
+
+  /* Decorative paper grain — subtle warm noise */
+  .grain::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0.5;
+    mix-blend-mode: multiply;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='180' height='180' viewBox='0 0 180 180'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.18 0 0 0 0 0.1 0 0 0 0 0.05 0 0 0 0.18 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  }
+  .dark .grain::after {
+    opacity: 0.35;
+    mix-blend-mode: screen;
+  }
+
+  /* Subtle ink stroke for divider lines */
+  .ink-divider {
+    background-image: linear-gradient(
+      to right,
+      transparent 0%,
+      var(--color-border) 20%,
+      var(--color-border) 80%,
+      transparent 100%
+    );
+  }
+
+  /* Hand-written underline */
+  .hand-underline {
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 8' preserveAspectRatio='none'><path d='M2 5 Q 20 1, 40 4 T 78 3' fill='none' stroke='%23d97706' stroke-width='1.6' stroke-linecap='round'/></svg>");
+    background-repeat: no-repeat;
+    background-position: 0 100%;
+    background-size: 100% 0.35em;
+    padding-bottom: 0.15em;
+  }
+  .dark .hand-underline {
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 8' preserveAspectRatio='none'><path d='M2 5 Q 20 1, 40 4 T 78 3' fill='none' stroke='%23fbbf24' stroke-width='1.6' stroke-linecap='round'/></svg>");
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.animate-fade-in {
+  animation: fade-in 0.2s ease-out;
+}
+
+@keyframes slide-up {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+.animate-slide-up {
+  animation: slide-up 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-33.333%);
+  }
+}
+.animate-marquee {
+  animation: marquee 30s linear infinite;
+}
+
+@keyframes float-slow {
+  0%,
+  100% {
+    transform: translateY(0) rotate(0);
+  }
+  50% {
+    transform: translateY(-8px) rotate(1deg);
+  }
+}
+.animate-float-slow {
+  animation: float-slow 6s ease-in-out infinite;
+}
+
+@keyframes steam {
+  0% {
+    opacity: 0;
+    transform: translateY(0) scale(1);
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-22px) scale(1.15);
+  }
+}
+.animate-steam {
+  animation: steam 3.4s ease-out infinite;
+}
+
+@media print {
+  html,
+  body {
+    background: #ffffff !important;
+  }
+  body * {
+    visibility: hidden;
+  }
+  .print\:block,
+  .print\:block * {
+    visibility: visible;
+  }
+  /* Make the QR preview printable */
+  header,
+  nav,
+  aside,
+  footer,
+  .no-print {
+    display: none !important;
+  }
+  @page {
+    margin: 12mm;
+  }
 }

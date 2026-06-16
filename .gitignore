@@ -39,3 +39,10 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# opencode tool config
+.opencode/
+
+# dev logs
+dev.log
+dev-err.log
