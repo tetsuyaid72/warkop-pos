@@ -2,28 +2,28 @@ import Link from "next/link";
 
 const columns = [
   {
-    title: "Produk",
+    title: "Café",
     links: [
-      { label: "Fitur", href: "#fitur" },
-      { label: "Harga", href: "#harga" },
-      { label: "Demo", href: "/dashboard" },
-      { label: "Changelog", href: "#" },
-    ],
-  },
-  {
-    title: "Cerita",
-    links: [
-      { label: "Cara mulai", href: "#cerita" },
+      { label: "Menu", href: "#menu" },
+      { label: "Lokasi", href: "#lokasi" },
       { label: "Testimoni", href: "#testimoni" },
       { label: "FAQ", href: "#faq" },
     ],
   },
   {
-    title: "Dukungan",
+    title: "Cerita",
     links: [
+      { label: "Tentang kami", href: "#cerita" },
+      { label: "Cara pesan", href: "#cara-pesan" },
+      { label: "Acoustic session", href: "#" },
+    ],
+  },
+  {
+    title: "Sosial",
+    links: [
+      { label: "Instagram", href: "https://instagram.com/sunsetcaffe" },
+      { label: "TikTok", href: "https://tiktok.com/@sunsetcaffe" },
       { label: "WhatsApp", href: "https://wa.me/6281234567890" },
-      { label: "Email", href: "mailto:halo@warkop.app" },
-      { label: "Komunitas", href: "#" },
     ],
   },
 ];
@@ -35,34 +35,45 @@ export function LandingFooter() {
         <div className="grid gap-14 sm:grid-cols-2 lg:grid-cols-12">
           <div className="lg:col-span-5">
             <Link href="/" className="group flex items-center gap-2.5">
-              <span className="flex h-9 w-9 items-center justify-center rounded-full bg-foreground transition-transform group-hover:rotate-12">
+              <span className="relative flex h-9 w-9 items-center justify-center rounded-full bg-gradient-to-br from-amber-500 via-orange-500 to-rose-500 transition-transform group-hover:rotate-12">
                 <svg
                   viewBox="0 0 24 24"
                   fill="none"
-                  className="h-4 w-4 text-background"
+                  className="h-4 w-4 text-white"
                 >
+                  <circle cx="12" cy="12" r="4" fill="currentColor" />
                   <path
-                    d="M6 8h11a3 3 0 010 6h-1.5M6 8v8a2 2 0 002 2h6a2 2 0 002-2v-2M6 8l-2-2m2 2l2-2"
+                    d="M12 3v2M12 19v2M3 12h2M19 12h2M5.6 5.6l1.4 1.4M17 17l1.4 1.4M5.6 18.4l1.4-1.4M17 7l1.4-1.4"
                     stroke="currentColor"
                     strokeWidth="1.6"
                     strokeLinecap="round"
-                    strokeLinejoin="round"
                   />
                 </svg>
               </span>
               <div className="leading-none">
                 <div className="font-display text-[18px] font-medium tracking-tight">
-                  Warung<span className="font-display-italic"> Kopi</span>
+                  Sunset<span className="font-display-italic"> Caffe</span>
                 </div>
                 <div className="mt-1 font-mono text-[9.5px] uppercase tracking-[0.22em] text-muted-foreground">
-                  POS · est. 2024
+                  Café · est. 2024
                 </div>
               </div>
             </Link>
             <p className="mt-5 max-w-xs text-pretty text-[14.5px] leading-[1.6] text-muted-foreground">
-              Sistem kasir yang dirancang dari dan untuk warung kopi Indonesia.
-              Bayar sekali, pakai selamanya.
+              Specialty coffee, signature drinks, dan view matahari terbenam di
+              Canggu, Bali. Buka setiap hari sampai malam.
             </p>
+            <div className="mt-6 space-y-1.5 text-[13.5px] text-muted-foreground">
+              <p className="font-mono text-[10px] uppercase tracking-[0.18em] text-foreground/70">
+                Alamat
+              </p>
+              <p>Jl. Senja Raya No. 24, Canggu, Bali</p>
+              <p className="mt-3 font-mono text-[10px] uppercase tracking-[0.18em] text-foreground/70">
+                Jam buka
+              </p>
+              <p>Senin-Jumat · 15.00-23.00</p>
+              <p>Sabtu-Minggu · 14.00-00.00</p>
+            </div>
           </div>
 
           {columns.map((col) => (
@@ -112,11 +123,11 @@ export function LandingFooter() {
 
         <div className="mt-16 flex flex-col items-start justify-between gap-3 border-t border-border/60 pt-8 sm:flex-row sm:items-center">
           <p className="font-mono text-[11px] uppercase tracking-[0.18em] text-muted-foreground">
-            © {new Date().getFullYear()} Warung Kopi · Dibuat dengan ☕ di
-            Indonesia
+            © {new Date().getFullYear()} Sunset Caffe · Dibuat dengan ☕ di
+            Canggu
           </p>
           <p className="font-display-italic text-[14px] text-muted-foreground">
-            &ldquo;Untuk para pejuang warung kopi.&rdquo;
+            &ldquo;Setiap senja punya rasa sendiri.&rdquo;
           </p>
         </div>
       </div>

@@ -26,9 +26,9 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Warung Coffee — Kasir modern untuk warung kopi",
+  title: "Sunset Caffe — Tempat di mana waktu melambat",
   description:
-    "Sistem kasir POS modern yang dirancang khusus untuk warung kopi Indonesia. Setup 15 menit, bayar sekali, langsung pakai.",
+    "Specialty coffee, signature drinks, dan view matahari terbenam yang gak akan kamu lupain. Sunset Caffe — Canggu, Bali.",
 };
 
 export default function RootLayout({

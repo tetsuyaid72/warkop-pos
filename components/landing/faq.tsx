@@ -8,32 +8,32 @@ import { cn } from "@/lib/utils";
 
 const faqs = [
   {
-    q: "Apa bedanya dengan POS SaaS seperti MOKA atau DealPOS?",
-    a: "POS SaaS mengenakan biaya bulanan Rp 50.000–300.000 per bulan. Warung Kopi POS adalah source code yang kamu beli sekali dan deploy sendiri. Gak ada biaya berulang, dan data kamu gak disimpan di server pihak ketiga.",
+    q: "Jam buka Sunset Caffe berapa?",
+    a: "Weekday (Senin-Jumat) buka dari jam 15.00 sampai 23.00 WIB. Weekend (Sabtu-Minggu) buka lebih awal, dari jam 14.00 sampai 00.00 WIB. Buka setiap hari termasuk hari libur nasional.",
   },
   {
-    q: "Saya gaptek, beneran bisa setup sendiri?",
-    a: "Bisa banget. Paket Coffee Shop dan Chain sudah termasuk sesi setup guided via Zoom 1 jam. Kamu cukup ikuti instruksi — gak perlu sentuh kode sama sekali.",
+    q: "Di mana lokasi persisnya?",
+    a: "Kami ada di Jl. Senja Raya No. 24, Canggu, Bali. Dekat dengan Pantai Berawa, sekitar 5 menit dari pusat Canggu. Parkir motor & mobil luas, gratis untuk semua pelanggan.",
   },
   {
-    q: "Data transaksi saya aman gak?",
-    a: "Sangat aman. Semua data tersimpan lokal di browser device kamu (localStorage). Gak ada server kami yang menerima data pelanggan. Kamu bisa export ke JSON kapan saja.",
+    q: "Bisa reservasi tempat untuk acara atau group?",
+    a: "Bisa banget. Untuk group kecil (4-8 orang) bisa langsung dateng. Untuk group besar atau acara (10+ orang), hubungi kami via WhatsApp minimal H-1 supaya kami siapin tempatnya.",
   },
   {
-    q: "Bisa dipakai untuk usaha selain warung kopi?",
-    a: "Bisa. Sistem ini fleksibel — cocok untuk kedai minuman, kafe kecil, bakery, atau retail sederhana. Kamu bisa custom kategori, produk, dan pajak sesuai jenis usaha.",
+    q: "Ada WiFi gratis?",
+    a: "Ada, kencang, dan gratis untuk semua pelanggan. Password WiFi ada di meja, atau bisa tanya langsung ke barista. Cocok buat WFC, Zoom-call, atau nge-draft skripsi.",
   },
   {
-    q: "Kalau ada masalah, gimana caranya minta bantuan?",
-    a: "Paket Coffee Shop dapat support WhatsApp 30 hari, dan Chain 90 hari. Kami fast response dan siap bantu. Plus ada komunitas owner Warung Kopi yang saling membantu.",
+    q: "Boleh bawa hewan peliharaan?",
+    a: "Boleh banget, kami pet friendly! Area outdoor recommended buat yang bawa anjing atau kucing. Kami juga sediain water bowl dan treats — tapi tetap diawasi ya, biar nyaman buat semua pelanggan.",
   },
   {
-    q: "Kalau ternyata gak cocok, uang saya balik gak?",
-    a: "Ya, kembali 100%. Garansi uang kembali 7 hari tanpa syarat. Kalau gak sesuai kebutuhan, tinggal minta refund via WhatsApp.",
+    q: "Metode pembayaran apa aja yang didukung?",
+    a: "QRIS, GoPay, OVO, DANA, ShopeePay, debit (BCA, Mandiri, BNI), dan tunai. Semua metode didukung untuk dine-in, takeaway, dan nanti juga delivery.",
   },
   {
-    q: "Gimana sistem pembayarannya?",
-    a: "Bisa transfer bank (BCA, Mandiri, BNI), e-wallet (GoPay, OVO, DANA), atau QRIS. Setelah pembayaran dikonfirmasi, source code dikirim ke email dalam 1x24 jam.",
+    q: "Ada menu vegetarian atau vegan?",
+    a: "Ada beberapa. Pilihan vegan-friendly: Lemon Tea, Lychee Tea, Oat Milk Latte (pakai oat milk), dan beberapa snack. Tanyakan ke barista untuk rekomendasi yang sesuai diet kamu.",
   },
 ];
 
@@ -52,7 +52,7 @@ export function LandingFAQ() {
           className="text-center"
         >
           <p className="font-mono text-[11px] font-semibold uppercase tracking-[0.22em] text-amber-700 dark:text-amber-400">
-            <span className="mr-2 text-muted-foreground/60">/05</span> Pertanyaan
+            <span className="mr-2 text-muted-foreground/60">/06</span> Pertanyaan
           </p>
           <h2
             className="mt-5 text-balance font-display text-[2.4rem] font-normal leading-[1.05] tracking-[-0.02em] sm:text-[3rem] lg:text-[3.6rem]"
@@ -65,7 +65,7 @@ export function LandingFAQ() {
             >
               sering
             </span>{" "}
-            ditanyakan.
+            ditanyain.
           </h2>
         </motion.div>
 

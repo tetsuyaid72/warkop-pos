@@ -1,35 +1,39 @@
 "use client";
 
 import { motion } from "motion/react";
+import { QrCode, Coffee, Truck } from "lucide-react";
 
 const steps = [
   {
     number: "01",
-    title: "Pesan & unduh source code",
+    icon: QrCode,
+    title: "Dine-in",
     description:
-      "Selesaikan pembayaran, dan dalam 1x24 jam source code lengkap dikirim ke email kamu. Plus video setup guide.",
-    detail: "Source code · Setup guide · Video tutorial",
+      "Duduk di meja favorit, scan QR code di meja kamu, pilih menu, pesanan langsung masuk ke kasir. Gak perlu antri, gak perlu nunggu dilayani.",
+    detail: "Scan QR · Pilih menu · Pesan",
   },
   {
     number: "02",
-    title: "Setup warung kamu, 15 menit",
+    icon: Coffee,
+    title: "Takeaway",
     description:
-      "Login, isi nama warung, atur menu, pilih warna brand. Atau biarin tim kami yang setupin via Zoom — gratis.",
-    detail: "Nama outlet · Menu · Logo · Warna brand",
+      "Mau buru-buru? Pesan langsung di kasir, bayar, dan tunggu nama kamu dipanggil. Pesanan biasanya siap dalam 5-10 menit tergantung antrian.",
+    detail: "Order di kasir · Bayar · Tunggu",
   },
   {
     number: "03",
-    title: "Langsung jualan, seperti biasa",
+    icon: Truck,
+    title: "Delivery",
     description:
-      "Buka di tablet atau HP, mulai catet pesanan. Pelanggan bayar, struk keluar, laporan ke-update otomatis.",
-    detail: "POS · Struk · Laporan · Backup",
+      "Coming soon! Kami lagi siapin sistem delivery buat kamu yang mau ngopi di rumah atau kantor tanpa harus keluar. Stay tuned ya.",
+    detail: "Segera hadir · Notif kami",
   },
 ];
 
 export function LandingHowItWorks() {
   return (
     <section
-      id="cerita"
+      id="cara-pesan"
       className="relative border-t border-border/60 bg-gradient-to-b from-amber-50/40 via-background to-background py-24 sm:py-32 dark:from-amber-950/10"
     >
       <div className="mx-auto max-w-6xl px-5 sm:px-8">
@@ -43,8 +47,8 @@ export function LandingHowItWorks() {
               transition={{ duration: 0.4 }}
               className="font-mono text-[11px] font-semibold uppercase tracking-[0.22em] text-amber-700 dark:text-amber-400"
             >
-              <span className="mr-2 text-muted-foreground/60">/02</span> Cara
-              mulai
+              <span className="mr-2 text-muted-foreground/60">/03</span> Cara
+              pesan
             </motion.p>
             <motion.h2
               initial={{ opacity: 0, y: 12 }}
@@ -54,21 +58,14 @@ export function LandingHowItWorks() {
               className="mt-5 text-balance font-display text-[2.4rem] font-normal leading-[1.05] tracking-[-0.02em] sm:text-[3rem] lg:text-[3.6rem]"
               style={{ fontVariationSettings: '"opsz" 144, "SOFT" 20' }}
             >
-              Dari checkout{" "}
+              Pesan dari meja,{" "}
               <span
                 className="font-display-italic"
                 style={{ fontVariationSettings: '"opsz" 144, "SOFT" 60' }}
               >
-                pertama
-              </span>{" "}
-              ke pesanan{" "}
-              <span
-                className="font-display-italic"
-                style={{ fontVariationSettings: '"opsz" 144, "SOFT" 60' }}
-              >
-                pertama
-              </span>{" "}
-              warung kamu.
+                gak perlu antri
+              </span>
+              .
             </motion.h2>
             <motion.p
               initial={{ opacity: 0, y: 12 }}
@@ -77,8 +74,8 @@ export function LandingHowItWorks() {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="mt-6 max-w-md text-pretty text-[16.5px] leading-[1.65] text-muted-foreground"
             >
-              Tiga langkah sederhana. Gak perlu training berhari-hari, gak
-              perlu panggil IT, gak perlu ganti workflow warung kamu.
+              Tiga cara pesan yang gampang. Mau duduk santai, buru-buru, atau
+              pesen buat di rumah — semua bisa.
             </motion.p>
           </div>
 
@@ -105,12 +102,20 @@ export function LandingHowItWorks() {
                     </div>
                   </div>
                   <div className="col-span-10">
-                    <h3
-                      className="font-display text-[22px] font-medium leading-tight tracking-[-0.01em]"
-                      style={{ fontVariationSettings: '"opsz" 144, "SOFT" 30' }}
-                    >
-                      {step.title}
-                    </h3>
+                    <div className="flex items-center gap-2.5">
+                      <step.icon
+                        className="h-4 w-4 text-amber-700 dark:text-amber-400"
+                        strokeWidth={1.8}
+                      />
+                      <h3
+                        className="font-display text-[22px] font-medium leading-tight tracking-[-0.01em]"
+                        style={{
+                          fontVariationSettings: '"opsz" 144, "SOFT" 30',
+                        }}
+                      >
+                        {step.title}
+                      </h3>
+                    </div>
                     <p className="mt-2.5 text-pretty text-[15.5px] leading-[1.65] text-muted-foreground">
                       {step.description}
                     </p>

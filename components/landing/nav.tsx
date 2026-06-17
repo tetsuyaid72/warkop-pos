@@ -6,10 +6,11 @@ import { Menu, X, ArrowUpRight } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const navItems = [
+  { href: "#menu", label: "Menu" },
   { href: "#cerita", label: "Cerita" },
-  { href: "#fitur", label: "Fitur" },
+  { href: "#lokasi", label: "Lokasi" },
   { href: "#testimoni", label: "Testimoni" },
-  { href: "#harga", label: "Harga" },
+  { href: "#faq", label: "FAQ" },
 ];
 
 export function LandingNav() {
@@ -41,27 +42,27 @@ export function LandingNav() {
     >
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-5 sm:h-18 sm:px-8">
         <Link href="/" className="group flex items-center gap-2.5">
-          <span className="relative flex h-9 w-9 items-center justify-center rounded-full bg-foreground transition-transform group-hover:rotate-12">
+          <span className="relative flex h-9 w-9 items-center justify-center rounded-full bg-gradient-to-br from-amber-500 via-orange-500 to-rose-500 transition-transform group-hover:rotate-12">
             <svg
               viewBox="0 0 24 24"
               fill="none"
-              className="h-4 w-4 text-background"
+              className="h-4 w-4 text-white"
             >
+              <circle cx="12" cy="12" r="4" fill="currentColor" />
               <path
-                d="M6 8h11a3 3 0 010 6h-1.5M6 8v8a2 2 0 002 2h6a2 2 0 002-2v-2M6 8l-2-2m2 2l2-2"
+                d="M12 3v2M12 19v2M3 12h2M19 12h2M5.6 5.6l1.4 1.4M17 17l1.4 1.4M5.6 18.4l1.4-1.4M17 7l1.4-1.4"
                 stroke="currentColor"
                 strokeWidth="1.6"
                 strokeLinecap="round"
-                strokeLinejoin="round"
               />
             </svg>
           </span>
           <div className="leading-none">
             <div className="font-display text-[17px] font-medium tracking-tight">
-              Warung<span className="font-display-italic"> Kopi</span>
+              Sunset<span className="font-display-italic"> Caffe</span>
             </div>
             <div className="mt-1 font-mono text-[9.5px] uppercase tracking-[0.22em] text-muted-foreground">
-              POS · est. 2024
+              Café · est. 2024
             </div>
           </div>
         </Link>
@@ -80,16 +81,16 @@ export function LandingNav() {
 
         <div className="hidden items-center gap-2 md:flex">
           <Link
-            href="/dashboard"
+            href="#lokasi"
             className="rounded-full px-3.5 py-1.5 text-[13.5px] text-foreground/70 transition-colors hover:text-foreground"
           >
-            Coba demo
+            Kunjungi kami
           </Link>
           <Link
-            href="#beli"
+            href="#menu"
             className="group inline-flex items-center gap-1.5 rounded-full bg-foreground px-4 py-2 text-[13.5px] font-medium text-background transition-transform hover:scale-[1.02] active:scale-[0.98]"
           >
-            Pesan sekarang
+            Lihat menu
             <ArrowUpRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
           </Link>
         </div>
@@ -119,18 +120,18 @@ export function LandingNav() {
             ))}
             <div className="mt-2 flex flex-col gap-2 border-t border-border/60 pt-3">
               <Link
-                href="/dashboard"
+                href="#lokasi"
                 onClick={() => setMobileOpen(false)}
                 className="rounded-lg border border-border px-3 py-3 text-center text-[15px] font-medium"
               >
-                Coba demo
+                Kunjungi kami
               </Link>
               <Link
-                href="#beli"
+                href="#menu"
                 onClick={() => setMobileOpen(false)}
                 className="rounded-lg bg-foreground px-3 py-3 text-center text-[15px] font-medium text-background"
               >
-                Pesan sekarang
+                Lihat menu
               </Link>
             </div>
           </nav>

@@ -1,18 +1,18 @@
 "use client";
 
 const items = [
-  { label: "QRIS" },
-  { label: "GoPay" },
-  { label: "OVO" },
-  { label: "DANA" },
-  { label: "ShopeePay" },
-  { label: "Tunai" },
-  { label: "Debit" },
-  { label: "Kredit" },
-  { label: "Thermal 58mm" },
-  { label: "Thermal 80mm" },
-  { label: "JSON Backup" },
-  { label: "Offline-first" },
+  { label: "Specialty Coffee" },
+  { label: "Sunset Vibes" },
+  { label: "Dine-in" },
+  { label: "Takeaway" },
+  { label: "Free WiFi" },
+  { label: "Sunset View" },
+  { label: "Single Origin" },
+  { label: "Cozy Space" },
+  { label: "Pet Friendly" },
+  { label: "Open Late" },
+  { label: "Outdoor Area" },
+  { label: "Acoustic Session" },
 ];
 
 const row = [...items, ...items, ...items];
@@ -20,7 +20,7 @@ const row = [...items, ...items, ...items];
 export function LandingMarquee() {
   return (
     <section
-      aria-label="Didukung oleh"
+      aria-label="Sunset Caffe"
       className="relative overflow-hidden border-y border-border/60 bg-foreground py-5 text-background"
     >
       <div

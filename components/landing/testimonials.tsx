@@ -6,27 +6,27 @@ import { Star, Quote } from "lucide-react";
 const testimonials = [
   {
     quote:
-      "Dulu saya tutup buku jam 11 malam, sekarang jam 9 udah bisa pulang. Laporannya udah ada semua.",
-    author: "Pak Rudi",
-    role: "Pemilik Kopi Bahari",
-    location: "Bandung",
-    initials: "RB",
+      "Tempat WFC favorit. WiFi kencang, kopi enak, view sunset-nya juara. Gak heran kalau susah cari kursi di jam 4 sore.",
+    author: "Sasha",
+    role: "Mahasiswi",
+    location: "Bali",
+    initials: "SA",
   },
   {
     quote:
-      "Yang bikin suka: pas buka cabang kedua, data dari outlet pertama tinggal export, restore di device baru. Beres.",
-    author: "Bu Sari",
-    role: "Pemilik Kopi Tuang 24",
+      "Pelayanan cepet, menu variatif, harga masuk akal buat kualitas segini. Anak saya juga suka brownies-nya — tiap weekend pasti minta diajak ke sini.",
+    author: "Raka",
+    role: "Freelance designer",
+    location: "Canggu",
+    initials: "RK",
+  },
+  {
+    quote:
+      "Barista-nya friendly, tahu menu yang pas buat mood lagi. Kalau lagi capek, mereka suka recommend yang creamy. Repeat order!",
+    author: "Dinda",
+    role: "Digital nomad",
     location: "Jakarta",
-    initials: "SK",
-  },
-  {
-    quote:
-      "Anak kasir saya baru SMP, gak butuh training khusus. Tinggal dikasih tau 10 menit, langsung ngerti.",
-    author: "Mas Dimas",
-    role: "Pemilik Dims Coffee",
-    location: "Surabaya",
-    initials: "DA",
+    initials: "DD",
   },
 ];
 
@@ -46,20 +46,20 @@ export function LandingTestimonials() {
           className="mx-auto max-w-2xl text-center"
         >
           <p className="font-mono text-[11px] font-semibold uppercase tracking-[0.22em] text-amber-700 dark:text-amber-400">
-            <span className="mr-2 text-muted-foreground/60">/03</span> Testimoni
+            <span className="mr-2 text-muted-foreground/60">/04</span> Testimoni
           </p>
           <h2
             className="mt-5 text-balance font-display text-[2.4rem] font-normal leading-[1.05] tracking-[-0.02em] sm:text-[3rem] lg:text-[3.6rem]"
             style={{ fontVariationSettings: '"opsz" 144, "SOFT" 20' }}
           >
-            Cerita dari mereka{" "}
+            Cerita dari yang{" "}
             <span
               className="font-display-italic"
               style={{ fontVariationSettings: '"opsz" 144, "SOFT" 60' }}
             >
-              yang udah pakai
-            </span>
-            .
+              udah pernah nongkrong
+            </span>{" "}
+            di sini.
           </h2>
         </motion.div>
 

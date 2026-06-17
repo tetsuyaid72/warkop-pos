@@ -2,57 +2,57 @@
 
 import { motion } from "motion/react";
 import {
+  Sun,
   Coffee,
-  BarChart3,
-  Receipt,
-  Smartphone,
-  Lock,
-  RefreshCw,
+  Wifi,
+  Users,
+  Moon,
+  Heart,
 } from "lucide-react";
 
 const features = [
   {
+    icon: Sun,
+    title: "Sunset view",
+    description:
+      "View matahari terbenam langsung dari sofa. Jam 17.00-18.30 tuh golden hour-nya, siap-siap untuk feed-able banget.",
+  },
+  {
     icon: Coffee,
-    title: "Dibuat dari ritme warung kopi",
+    title: "Single origin beans",
     description:
-      "Bukan adaptasi software ritel. Dirancang setelah ngobrol sama puluhan owner warung — tahu persis apa yang dibutuhin saat jam sibuk.",
+      "Biji kopi pilihan dari Gayo, Toraja, Mandheling. Roast mingguan biar selalu fresh sampai di cangkir kamu.",
   },
   {
-    icon: BarChart3,
-    title: "Tahu bisnis kamu, setiap hari",
+    icon: Users,
+    title: "Cozy space",
     description:
-      "Menu mana yang paling laris, jam berapa yang paling rame, kasir siapa yang paling cepat. Semua otomatis muncul di dashboard.",
+      "Indoor & outdoor area, cocok buat sendiri, rame-rame, atau meeting kecil. Banyak stop kontak, banyak sudut tenang.",
   },
   {
-    icon: Receipt,
-    title: "Struk yang pelanggan ingat",
+    icon: Wifi,
+    title: "Free WiFi kencang",
     description:
-      "Format thermal 58mm/80mm yang rapi, dengan logo dan pesan brand kamu. Bukan cuma struk — itu mini marketing.",
+      "Buat yang WFC, nge-draft skripsi, atau Zoom-call. Password ada di meja, unlimited untuk semua pelanggan.",
   },
   {
-    icon: Smartphone,
-    title: "Terima semua jenis pembayaran",
+    icon: Moon,
+    title: "Open late",
     description:
-      "QRIS, GoPay, OVO, DANA, debit, tunai — semua masuk ke satu laporan. Gak perlu ribet rekam manual lagi.",
+      "Buka sampai malam buat yang suka senja. Tiap Jumat & Sabtu ada acoustic session mulai jam 19.00.",
   },
   {
-    icon: Lock,
-    title: "Data milik kamu sepenuhnya",
+    icon: Heart,
+    title: "Pet friendly",
     description:
-      "Tersimpan di device kamu, bukan server kami. Gak ada yang bisa ambil, gak ada yang bisa lihat. Privasi itu hak.",
-  },
-  {
-    icon: RefreshCw,
-    title: "Pindah device? Gampang.",
-    description:
-      "Export semua data ke JSON, restore di mana aja. Buka cabang baru, ganti tablet, atau upgrade device — semua data aman.",
+      "Bawa anjing atau kucing boleh, ada water bowl & treats-nya juga. Area outdoor recommended buat yang bawa pets.",
   },
 ];
 
 export function LandingFeatures() {
   return (
     <section
-      id="fitur"
+      id="cerita"
       className="relative border-t border-border/60 py-24 sm:py-32"
     >
       <div className="mx-auto max-w-6xl px-5 sm:px-8">
@@ -65,24 +65,24 @@ export function LandingFeatures() {
           className="mx-auto max-w-2xl text-center"
         >
           <p className="font-mono text-[11px] font-semibold uppercase tracking-[0.22em] text-amber-700 dark:text-amber-400">
-            <span className="mr-2 text-muted-foreground/60">/01</span> Fitur
+            <span className="mr-2 text-muted-foreground/60">/02</span> Cerita
           </p>
           <h2
             className="mt-5 text-balance font-display text-[2.4rem] font-normal leading-[1.05] tracking-[-0.02em] sm:text-[3rem] lg:text-[3.6rem]"
             style={{ fontVariationSettings: '"opsz" 144, "SOFT" 20' }}
           >
-            Enam hal yang{" "}
+            Kenapa Sunset Caffe bukan{" "}
             <span
               className="font-display-italic"
               style={{ fontVariationSettings: '"opsz" 144, "SOFT" 60' }}
             >
-              sebenernya
+              sekadar
             </span>{" "}
-            kamu butuhin.
+            café biasa.
           </h2>
           <p className="mx-auto mt-5 max-w-lg text-pretty text-[16.5px] leading-[1.65] text-muted-foreground">
-            Bukan 47 fitur yang bikin pusing. Cuma yang benar-benar kepake di
-            warung kopi setiap hari.
+            Enam hal yang bikin orang balik lagi — bukan cuma soal kopinya, tapi
+            soal tempat dan waktunya.
           </p>
         </motion.div>
 
