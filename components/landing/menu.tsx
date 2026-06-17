@@ -59,7 +59,7 @@ export function LandingMenu() {
           className="mx-auto max-w-2xl text-center"
         >
           <p className="font-mono text-[11px] font-semibold uppercase tracking-[0.22em] text-amber-700 dark:text-amber-400">
-            <span className="mr-2 text-muted-foreground/60">/01</span> Menu
+            <span className="mr-2 text-muted-foreground/60">/02</span> Menu
           </p>
           <h2
             className="mt-5 text-balance font-display text-[2.4rem] font-normal leading-[1.05] tracking-[-0.02em] sm:text-[3rem] lg:text-[3.6rem]"
@@ -75,7 +75,7 @@ export function LandingMenu() {
             .
           </h2>
           <p className="mx-auto mt-5 max-w-lg text-pretty text-[16.5px] leading-[1.65] text-muted-foreground">
-            Pilihan best seller kami â€” dari kopi signature sampai comfort food
+            Pilihan best seller kami — dari kopi signature sampai comfort food
             buat nemenin senja kamu.
           </p>
         </motion.div>
