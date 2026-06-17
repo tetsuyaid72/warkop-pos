@@ -3,11 +3,11 @@
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "motion/react";
-import { ArrowRight, Star, Quote } from "lucide-react";
+import { ArrowRight, Star } from "lucide-react";
 
 export function LandingHero() {
   return (
-    <section className="relative isolate overflow-hidden pt-28 pb-16 sm:pt-36 sm:pb-20 lg:pt-44 lg:pb-28">
+    <section className="relative isolate overflow-hidden pt-20 pb-16 sm:pt-24 sm:pb-20 lg:pt-32 lg:pb-24">
       {/* Sunset gradient background */}
       <div className="pointer-events-none absolute inset-0 -z-10">
         <div className="absolute inset-0 bg-gradient-to-b from-amber-50/60 via-orange-50/30 to-rose-50/40 dark:from-amber-950/25 dark:via-orange-950/15 dark:to-rose-950/20" />
@@ -20,13 +20,13 @@ export function LandingHero() {
 
       <div className="mx-auto max-w-6xl px-5 sm:px-8">
         <div className="grid items-center gap-14 lg:grid-cols-12 lg:gap-10">
-          {/* Left â€” Copy */}
+          {/* Left — Copy */}
           <div className="lg:col-span-7">
             <motion.div
               initial={{ opacity: 0, y: 8 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.4 }}
-              className="inline-flex items-center gap-2.5 rounded-full border border-border/80 bg-background/70 px-3 py-1.5 text-[11.5px] text-muted-foreground shadow-sm backdrop-blur-sm"
+              className="inline-flex items-center gap-2.5 rounded-full border border-border/80 bg-background/70 px-3 py-1.5 text-[13px] text-muted-foreground shadow-sm backdrop-blur-sm"
             >
               <span className="relative flex h-1.5 w-1.5">
                 <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-amber-500/70" />
@@ -69,7 +69,7 @@ export function LandingHero() {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="mt-7 max-w-xl text-pretty text-[17px] leading-[1.65] text-muted-foreground"
             >
-              Sunset Caffe â€” specialty coffee, signature drinks, dan view
+              Sunset Caffe — specialty coffee, signature drinks, dan view
               matahari terbenam yang{" "}
               <span className="font-medium text-foreground">
                 gak akan kamu lupain
@@ -121,7 +121,7 @@ export function LandingHero() {
             </motion.div>
           </div>
 
-          {/* Right â€” Visual showcase */}
+          {/* Right — Visual showcase */}
           <motion.div
             initial={{ opacity: 0, scale: 0.95, rotate: 1 }}
             animate={{ opacity: 1, scale: 1, rotate: 0 }}
@@ -142,8 +142,8 @@ export function LandingHero() {
                 <div className="absolute inset-0 bg-gradient-to-t from-amber-950/40 via-transparent to-transparent" />
 
                 {/* Signature drinks card */}
-                <div className="absolute inset-x-3 bottom-3 rounded-2xl border border-white/30 bg-background/85 p-4 shadow-xl backdrop-blur-md">
-                  <p className="font-mono text-[10px] uppercase tracking-[0.22em] text-amber-700 dark:text-amber-400">
+                <div className="absolute inset-x-3 bottom-3 z-10 rounded-2xl border border-white/30 bg-background/85 p-4 shadow-xl backdrop-blur-md">
+                  <p className="font-mono text-[11px] uppercase tracking-[0.22em] text-amber-700 dark:text-amber-400">
                     Signature drinks
                   </p>
                   <ul className="mt-2.5 space-y-1.5">
@@ -157,7 +157,7 @@ export function LandingHero() {
                         className="flex items-center justify-between text-[13px]"
                       >
                         <span className="text-foreground/90">{drink.name}</span>
-                        <span className="font-mono text-[11.5px] text-muted-foreground">
+                        <span className="font-mono text-[13px] text-muted-foreground">
                           {drink.price}
                         </span>
                       </li>
@@ -166,32 +166,17 @@ export function LandingHero() {
                 </div>
               </div>
 
-              {/* Floating tag â€” top */}
+              {/* Floating tag — top right (inside image) */}
               <motion.div
                 initial={{ opacity: 0, y: -8, x: 8 }}
                 animate={{ opacity: 1, y: 0, x: 0 }}
                 transition={{ duration: 0.6, delay: 0.7 }}
-                className="absolute -right-3 -top-3 hidden rounded-full border border-border/80 bg-background/95 px-3.5 py-1.5 text-[11px] font-medium shadow-xl backdrop-blur-md sm:flex sm:items-center sm:gap-2"
+                className="absolute right-3 top-3 z-20 hidden rounded-full border border-border/80 bg-background/95 px-3.5 py-1.5 text-[13px] font-medium shadow-xl backdrop-blur-md sm:flex sm:items-center sm:gap-2"
               >
                 <span className="h-1.5 w-1.5 rounded-full bg-orange-500" />
-                Sunset view Â· 17.00-18.30
+                Sunset view · 17.00-18.30
               </motion.div>
 
-              {/* Quote bubble â€” bottom left */}
-              <motion.div
-                initial={{ opacity: 0, x: -12, y: 8 }}
-                animate={{ opacity: 1, x: 0, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.95 }}
-                className="absolute -bottom-6 -left-4 hidden max-w-[230px] rounded-2xl border border-border/80 bg-background/95 p-3.5 shadow-xl backdrop-blur-md sm:block"
-              >
-                <Quote className="h-3.5 w-3.5 text-amber-600" />
-                <p className="mt-2 text-[12.5px] font-medium leading-snug text-foreground">
-                  &ldquo;Tempat WFC favorit. Sunset-nya juara.&rdquo;
-                </p>
-                <p className="mt-1.5 font-mono text-[10px] uppercase tracking-[0.16em] text-muted-foreground">
-                  Sasha Â· Mahasiswi
-                </p>
-              </motion.div>
             </div>
           </motion.div>
         </div>

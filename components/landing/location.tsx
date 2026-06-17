@@ -19,7 +19,7 @@ export function LandingLocation() {
           className="mx-auto max-w-2xl text-center"
         >
           <p className="font-mono text-[11px] font-semibold uppercase tracking-[0.22em] text-amber-700 dark:text-amber-400">
-            <span className="mr-2 text-muted-foreground/60">/05</span> Lokasi &
+            <span className="mr-2 text-muted-foreground/60">/06</span> Lokasi &
             jam buka
           </p>
           <h2
@@ -31,7 +31,7 @@ export function LandingLocation() {
               className="font-display-italic"
               style={{ fontVariationSettings: '"opsz" 144, "SOFT" 60' }}
             >
-              di Canggu
+              di Kalimantan Selatan
             </span>
             .
           </h2>
@@ -65,13 +65,13 @@ export function LandingLocation() {
                 <MapPin className="h-7 w-7 text-background" strokeWidth={1.8} />
               </div>
               <p className="mt-5 font-mono text-[11px] uppercase tracking-[0.22em] text-foreground/70">
-                Canggu · Bali
+                Bati Bati · Kalimantan Selatan
               </p>
               <p className="mt-2 max-w-xs text-pretty text-[15px] font-medium leading-snug text-foreground/90">
-                Jl. Senja Raya No. 24, Canggu, Bali
+                CM3X+GHR, Jl. Industri, Padang, Kec. Bati Bati, Kabupaten Tanah Laut, Kalimantan Selatan 70853
               </p>
               <a
-                href="https://maps.google.com/?q=Canggu,Bali"
+                href="https://maps.app.goo.gl/HfnGdEHUbY5hyKrTA"
                 target="_blank"
                 rel="noreferrer"
                 className="mt-6 inline-flex items-center gap-1.5 rounded-full border border-foreground/20 bg-background/80 px-4 py-2 text-[13px] font-medium backdrop-blur-sm transition-colors hover:border-foreground/40 hover:bg-background"

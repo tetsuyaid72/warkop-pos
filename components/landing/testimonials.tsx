@@ -9,7 +9,7 @@ const testimonials = [
       "Tempat WFC favorit. WiFi kencang, kopi enak, view sunset-nya juara. Gak heran kalau susah cari kursi di jam 4 sore.",
     author: "Sasha",
     role: "Mahasiswi",
-    location: "Bali",
+    location: "Kalimantan Selatan",
     initials: "SA",
   },
   {
@@ -17,7 +17,7 @@ const testimonials = [
       "Pelayanan cepet, menu variatif, harga masuk akal buat kualitas segini. Anak saya juga suka brownies-nya — tiap weekend pasti minta diajak ke sini.",
     author: "Raka",
     role: "Freelance designer",
-    location: "Canggu",
+    location: "Bati Bati",
     initials: "RK",
   },
   {
@@ -46,7 +46,7 @@ export function LandingTestimonials() {
           className="mx-auto max-w-2xl text-center"
         >
           <p className="font-mono text-[11px] font-semibold uppercase tracking-[0.22em] text-amber-700 dark:text-amber-400">
-            <span className="mr-2 text-muted-foreground/60">/04</span> Testimoni
+            <span className="mr-2 text-muted-foreground/60">/05</span> Testimoni
           </p>
           <h2
             className="mt-5 text-balance font-display text-[2.4rem] font-normal leading-[1.05] tracking-[-0.02em] sm:text-[3rem] lg:text-[3.6rem]"
@@ -91,7 +91,7 @@ export function LandingTestimonials() {
                   <p className="text-[14px] font-semibold leading-tight">
                     {t.author}
                   </p>
-                  <p className="mt-0.5 font-mono text-[10.5px] uppercase tracking-[0.16em] text-muted-foreground">
+                  <p className="mt-0.5 font-mono text-[11px] uppercase tracking-[0.16em] text-muted-foreground">
                     {t.role} · {t.location}
                   </p>
                 </div>

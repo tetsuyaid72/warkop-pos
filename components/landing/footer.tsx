@@ -1,8 +1,9 @@
 import Link from "next/link";
+import Image from "next/image";
 
 const columns = [
   {
-    title: "Café",
+    title: "Cafe",
     links: [
       { label: "Menu", href: "#menu" },
       { label: "Lokasi", href: "#lokasi" },
@@ -35,27 +36,21 @@ export function LandingFooter() {
         <div className="grid gap-14 sm:grid-cols-2 lg:grid-cols-12">
           <div className="lg:col-span-5">
             <Link href="/" className="group flex items-center gap-2.5">
-              <span className="relative flex h-9 w-9 items-center justify-center rounded-full bg-gradient-to-br from-amber-500 via-orange-500 to-rose-500 transition-transform group-hover:rotate-12">
-                <svg
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  className="h-4 w-4 text-white"
-                >
-                  <circle cx="12" cy="12" r="4" fill="currentColor" />
-                  <path
-                    d="M12 3v2M12 19v2M3 12h2M19 12h2M5.6 5.6l1.4 1.4M17 17l1.4 1.4M5.6 18.4l1.4-1.4M17 7l1.4-1.4"
-                    stroke="currentColor"
-                    strokeWidth="1.6"
-                    strokeLinecap="round"
-                  />
-                </svg>
+              <span className="relative flex h-9 w-9 shrink-0 items-center justify-center overflow-hidden rounded-full ring-1 ring-border/60 transition-transform group-hover:scale-110">
+                <Image
+                  src="/logo.jpg"
+                  alt="Sunset Caffe"
+                  fill
+                  sizes="36px"
+                  className="object-cover"
+                />
               </span>
               <div className="leading-none">
                 <div className="font-display text-[18px] font-medium tracking-tight">
                   Sunset<span className="font-display-italic"> Caffe</span>
                 </div>
                 <div className="mt-1 font-mono text-[9.5px] uppercase tracking-[0.22em] text-muted-foreground">
-                  Café · est. 2024
+                  Coffee · Sunset · Slow Living
                 </div>
               </div>
             </Link>
@@ -67,7 +62,7 @@ export function LandingFooter() {
               <p className="font-mono text-[10px] uppercase tracking-[0.18em] text-foreground/70">
                 Alamat
               </p>
-              <p>Jl. Senja Raya No. 24, Canggu, Bali</p>
+              <p>CM3X+GHR, Jl. Industri, Padang, Kec. Bati Bati, Kabupaten Tanah Laut, Kalimantan Selatan 70853</p>
               <p className="mt-3 font-mono text-[10px] uppercase tracking-[0.18em] text-foreground/70">
                 Jam buka
               </p>

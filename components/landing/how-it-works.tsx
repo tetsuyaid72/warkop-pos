@@ -47,7 +47,7 @@ export function LandingHowItWorks() {
               transition={{ duration: 0.4 }}
               className="font-mono text-[11px] font-semibold uppercase tracking-[0.22em] text-amber-700 dark:text-amber-400"
             >
-              <span className="mr-2 text-muted-foreground/60">/03</span> Cara
+              <span className="mr-2 text-muted-foreground/60">/04</span> Cara
               pesan
             </motion.p>
             <motion.h2

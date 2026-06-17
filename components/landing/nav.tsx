@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useEffect, useState } from "react";
 import { Menu, X, ArrowUpRight } from "lucide-react";
 import { cn } from "@/lib/utils";
@@ -42,27 +43,21 @@ export function LandingNav() {
     >
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-5 sm:h-18 sm:px-8">
         <Link href="/" className="group flex items-center gap-2.5">
-          <span className="relative flex h-9 w-9 items-center justify-center rounded-full bg-gradient-to-br from-amber-500 via-orange-500 to-rose-500 transition-transform group-hover:rotate-12">
-            <svg
-              viewBox="0 0 24 24"
-              fill="none"
-              className="h-4 w-4 text-white"
-            >
-              <circle cx="12" cy="12" r="4" fill="currentColor" />
-              <path
-                d="M12 3v2M12 19v2M3 12h2M19 12h2M5.6 5.6l1.4 1.4M17 17l1.4 1.4M5.6 18.4l1.4-1.4M17 7l1.4-1.4"
-                stroke="currentColor"
-                strokeWidth="1.6"
-                strokeLinecap="round"
-              />
-            </svg>
+          <span className="relative flex h-9 w-9 shrink-0 items-center justify-center overflow-hidden rounded-full ring-1 ring-border/60 transition-transform group-hover:scale-110">
+            <Image
+              src="/logo.jpg"
+              alt="Sunset Caffe"
+              fill
+              sizes="36px"
+              className="object-cover"
+            />
           </span>
           <div className="leading-none">
             <div className="font-display text-[17px] font-medium tracking-tight">
               Sunset<span className="font-display-italic"> Caffe</span>
             </div>
-            <div className="mt-1 font-mono text-[9.5px] uppercase tracking-[0.22em] text-muted-foreground">
-              Café · est. 2024
+            <div className="mt-1 hidden font-mono text-[9.5px] uppercase tracking-[0.22em] text-muted-foreground sm:block">
+              Coffee · Sunset · Slow Living
             </div>
           </div>
         </Link>

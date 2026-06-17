@@ -65,7 +65,7 @@ export function LandingFeatures() {
           className="mx-auto max-w-2xl text-center"
         >
           <p className="font-mono text-[11px] font-semibold uppercase tracking-[0.22em] text-amber-700 dark:text-amber-400">
-            <span className="mr-2 text-muted-foreground/60">/02</span> Cerita
+            <span className="mr-2 text-muted-foreground/60">/03</span> Cerita
           </p>
           <h2
             className="mt-5 text-balance font-display text-[2.4rem] font-normal leading-[1.05] tracking-[-0.02em] sm:text-[3rem] lg:text-[3.6rem]"

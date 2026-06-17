@@ -34,7 +34,7 @@ export function LandingCTA() {
 
           <div className="relative mx-auto max-w-2xl text-center">
             <p className="font-mono text-[11px] font-semibold uppercase tracking-[0.22em] text-amber-700 dark:text-amber-400">
-              <span className="mr-2 text-muted-foreground/60">/07</span> Ayo
+              <span className="mr-2 text-muted-foreground/60">/08</span> Ayo
               mampir
             </p>
             <h2
@@ -77,7 +77,7 @@ export function LandingCTA() {
                 <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5" />
               </Link>
               <a
-                href="https://maps.google.com/?q=Canggu,Bali"
+                href="https://maps.app.goo.gl/HfnGdEHUbY5hyKrTA"
                 target="_blank"
                 rel="noreferrer"
                 className="group inline-flex w-full items-center justify-center gap-1.5 rounded-full border border-border bg-background px-6 py-3.5 text-[14px] font-medium text-foreground transition-colors hover:bg-muted/60 sm:w-auto"

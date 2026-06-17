@@ -13,7 +13,7 @@ const faqs = [
   },
   {
     q: "Di mana lokasi persisnya?",
-    a: "Kami ada di Jl. Senja Raya No. 24, Canggu, Bali. Dekat dengan Pantai Berawa, sekitar 5 menit dari pusat Canggu. Parkir motor & mobil luas, gratis untuk semua pelanggan.",
+    a: "Kami ada di CM3X+GHR, Jl. Industri, Padang, Kec. Bati Bati, Kabupaten Tanah Laut, Kalimantan Selatan 70853. Parkir motor & mobil luas, gratis untuk semua pelanggan.",
   },
   {
     q: "Bisa reservasi tempat untuk acara atau group?",
@@ -52,7 +52,7 @@ export function LandingFAQ() {
           className="text-center"
         >
           <p className="font-mono text-[11px] font-semibold uppercase tracking-[0.22em] text-amber-700 dark:text-amber-400">
-            <span className="mr-2 text-muted-foreground/60">/06</span> Pertanyaan
+            <span className="mr-2 text-muted-foreground/60">/07</span> Pertanyaan
           </p>
           <h2
             className="mt-5 text-balance font-display text-[2.4rem] font-normal leading-[1.05] tracking-[-0.02em] sm:text-[3rem] lg:text-[3.6rem]"
