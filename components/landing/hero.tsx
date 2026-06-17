@@ -36,7 +36,7 @@ export function LandingHero() {
                 Buka hari ini
               </span>
               <span aria-hidden className="h-3 w-px bg-border" />
-              <span>15.00 - 23.00 WIB</span>
+              <span>15.00 - 22.00 WIB</span>
             </motion.div>
 
             <motion.h1

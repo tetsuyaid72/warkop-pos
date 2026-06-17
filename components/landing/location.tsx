@@ -101,30 +101,21 @@ export function LandingLocation() {
                   <p className="font-mono text-[10px] uppercase tracking-[0.18em] text-muted-foreground">
                     Jam buka
                   </p>
-                  <div className="mt-3 space-y-2">
-                    <div className="flex items-center justify-between text-[14px]">
-                      <span className="text-muted-foreground">
-                        Senin - Jumat
-                      </span>
-                      <span className="font-mono font-medium text-foreground">
-                        15.00 - 23.00
-                      </span>
-                    </div>
-                    <div className="flex items-center justify-between text-[14px]">
-                      <span className="text-muted-foreground">
-                        Sabtu - Minggu
-                      </span>
-                      <span className="font-mono font-medium text-foreground">
-                        14.00 - 00.00
-                      </span>
-                    </div>
+                  <div className="mt-3 flex items-center justify-between text-[14px]">
+                    <span className="text-muted-foreground">
+                      Senin - Minggu
+                    </span>
+                    <span className="font-mono font-medium text-foreground">
+                      15.00 - 22.00
+                    </span>
                   </div>
                   <p className="mt-4 text-[12.5px] text-muted-foreground">
-                    ✓ Buka setiap hari termasuk hari libur
+                    Buka setiap hari termasuk hari libur
                   </p>
                 </div>
+
+                </div>
               </div>
-            </div>
 
             <div className="rounded-2xl border border-border/60 bg-card p-6">
               <div className="flex items-start gap-3">

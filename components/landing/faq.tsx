@@ -9,11 +9,11 @@ import { cn } from "@/lib/utils";
 const faqs = [
   {
     q: "Jam buka Sunset Caffe berapa?",
-    a: "Weekday (Senin-Jumat) buka dari jam 15.00 sampai 23.00 WIB. Weekend (Sabtu-Minggu) buka lebih awal, dari jam 14.00 sampai 00.00 WIB. Buka setiap hari termasuk hari libur nasional.",
+    a: "Setiap hari (Senin-Minggu) buka dari jam 15.00 sampai 22.00 WIB. Buka setiap hari termasuk hari libur nasional.",
   },
   {
     q: "Di mana lokasi persisnya?",
-    a: "Kami ada di CM3X+GHR, Jl. Industri, Padang, Kec. Bati Bati, Kabupaten Tanah Laut, Kalimantan Selatan 70853. Parkir motor & mobil luas, gratis untuk semua pelanggan.",
+    a: "Kami ada di Jl. Industri, Padang, Kec. Bati Bati, Kabupaten Tanah Laut, Kalimantan Selatan ( Desa Padang, Bati-Bati - Sebelum Wisata Mahuni ).",
   },
   {
     q: "Bisa reservasi tempat untuk acara atau group?",
